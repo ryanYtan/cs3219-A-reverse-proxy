@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 5002
 
-CMD ['python', 'cat_imager.py']
+CMD ["python", "cat_imager.py"]

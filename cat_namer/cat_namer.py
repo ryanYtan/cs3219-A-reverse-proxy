@@ -6,7 +6,9 @@ app = Flask(__name__)
 @app.route('/')
 def get_name():
     names = ["Mr. Mittens", "McFluffes", "M.C Escher", "Mayonnaise"]
-    return random.choice(names)
+    return {
+        "name": random.choice(names)
+    }
 
 if __name__  == "__main__":
     # has to correspond to port being exposed in dockerfile
